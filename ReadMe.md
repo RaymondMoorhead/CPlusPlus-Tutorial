@@ -16,5 +16,3 @@ If you need to reference operators, terminology, or other fundamental material, 
    - It is highly recommended that you view and write code in an application with color coding and some level of intelligent C++ auto-completion, such as Notepad++, Sublime, or Visual Studio Code.
    - The lessons are in order, start with `L00_HelloProgramming.cpp`
 3. Run the appropriate `compile` script to run the code, or the appropriate `clean` scipt to remove the generated code.
-   - Windows users should run scripts with `.bat` as the extension.
-   - Linux users should run scripts with `.sh` as the extension.
