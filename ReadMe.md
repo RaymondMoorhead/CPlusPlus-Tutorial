@@ -12,7 +12,7 @@ If you need to reference operators, terminology, or other fundamental material, 
    - For Linux run `sudo apt-get update` followed by `sudo apt-get install g++`in the terminal.
    - For Mac run `g++` in the terminal, and select the install option.
    - For Windows install it as part of [Cygwin](https://www.cygwin.com/), or use [this guide](https://www3.cs.stonybrook.edu/~alee/g++/g++.html).
-2. View the appropriate lesson in the `Lessons` folder.
+2. View the appropriate lesson in the `Source/Lessons` folder.
    - It is highly recommended that you view and write code in an application with color coding and some level of intelligent C++ auto-completion, such as Notepad++, Sublime, or Visual Studio Code.
    - The lessons are in order, start with `L00_HelloProgramming.cpp`
 3. Run the appropriate `compile` script to run the code, or the appropriate `clean` scipt to remove the generated code.
