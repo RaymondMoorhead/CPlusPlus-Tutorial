@@ -21,7 +21,7 @@
 /*
     Programming is about giving a computer a series of commands it can
   execute to perform some task. For all intents and purposes, only the
-  programmer understand the objective, and the computer will blindly
+  programmer understands the objective, and the computer will blindly
   do what it has been told regardless of the result.
   
     These commands are usually in a linear sequence, with the next
