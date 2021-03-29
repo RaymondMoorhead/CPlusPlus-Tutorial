@@ -15,13 +15,13 @@ int main(int argc, char** argv)
   {
     // Here we strip away any file path data, to simplify the output...
     char* app_name = argv[0];
-    for(int i = 0; app_name[i] != '\0'; ++i)
-      if(app_name[i] == '\\' || app_name[i] == '/')
+    for(int i = 0; argv[0][i] != '\0'; ++i)
+      if(argv[0][i] == '\\' || argv[0][i] == '/')
         app_name = argv[0] + i + 1;
     
     // ...and then show howthe program should be invoked
     printf("No arguments were provided!\n");
-    printf("\t* Open your command prompt ('cmd') to 'C++Lessons\\CompiledLessons'\n");
+    printf("\t* Open your command prompt ('cmd') to 'C++Lessons\\Compiled\\Lessons'\n");
     printf("\t* launch the program as follows:\n");
     printf("\t\t%s <arg1> <arg2> <arg3> <etc...>\n", app_name);
   }

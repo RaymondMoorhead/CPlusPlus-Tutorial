@@ -20,18 +20,11 @@ int main(int argc, char** argv)
     i = getchar();
   }
   
-  // 'gets' can get a full string, but if the user
-  // inputs more characters than the pointer/array
-  // has space for, bad stuff will happen
-  char str[100];
-  printf( "\nEnter a value: ");
-  gets( str );
-  printf("\tYou typed: %s", str);
-  
   // 'scanf' allows you to specify what the data should
-  // be, and returns the number of filled variables. It
-  // has similar risks as 'gets' in regards to 'buffer
-  // overflow'
+  // be, and returns the number of filled variables. If
+  // the user inputs more characters into a pointer/array
+  // than it has space for, bad stuff will happen
+  char str[20];
   printf( "\nEnter a name and number: ");
   scanf("%s %i", str, &i);
   printf("\tYou typed: %s %i\n", str, i);

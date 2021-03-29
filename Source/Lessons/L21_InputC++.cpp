@@ -19,6 +19,14 @@ int main(int argc, char** argv)
   std::cin >> num;
   std::cout << "You typed: " << num << std::endl;
   
+  /*
+    NOTE:   This does leave the '\n' character in the console's buffer,
+          which would immediately cause our next example to run without
+          input from us, so we need to 'consume' the newline before
+          continuing.
+    */
+  std::cin.ignore();
+  
   // secondly, you can use 'getline' to store it in a string
   std::string str;
   std::cout << "Please type a name: ";

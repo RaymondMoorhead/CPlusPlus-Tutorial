@@ -12,8 +12,9 @@ If you need to reference operators, terminology, or other fundamental material, 
    - For Linux run `sudo apt-get update` followed by `sudo apt-get install g++`in the terminal.
    - For Mac run `g++` in the terminal, and select the install option.
    - For Windows install it as part of [Cygwin](https://www.cygwin.com/), or use [this guide](https://www3.cs.stonybrook.edu/~alee/g++/g++.html).
-2. View the appropriate lesson in the `Lessons` folder
+2. View the appropriate lesson in the `Lessons` folder.
    - It is highly recommended that you view and write code in an application with color coding and some level of intelligent C++ auto-completion, such as Notepad++, Sublime, or Visual Studio Code.
-   - The lessons are in order, start with `00_Preprocessor.cpp`
-3. Run it with `compile_lesson.bat` if desired.
-   - I have not provided Linux and Mac equivalent scripts yet, but most lessons will simply run with `g++ -o "CompiledLessons/Lesson_<number>.exe" "Lessons/<number>_*.cpp"`, with the exceptions being lessons 4, 5, 6, and 9. Lessons 4 and 6 also use files from lesson 5, 5 uses files from lesson 4, and lesson 6 requires macros to be defined as part of the call to `g++`. To add macros in this call, use `-D <macro_name>=<optional_macro_value>`.
+   - The lessons are in order, start with `L00_HelloProgramming.cpp`
+3. Run the appropriate `compile` script to run the code, or the appropriate `clean` scipt to remove the generated code.
+   - Windows users should run scripts with `.bat` as the extension.
+   - Linux users should run scripts with `.sh` as the extension.
