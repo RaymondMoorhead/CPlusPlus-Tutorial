@@ -1,0 +1,5 @@
+// ANIMAL(Name, Noise)
+ANIMAL(Cat, Meow)
+ANIMAL(Dog, Woof)
+ANIMAL(Snake, Hiss)
+ANIMAL(Bird, Caw)

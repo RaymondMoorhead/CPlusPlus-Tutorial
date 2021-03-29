@@ -3,8 +3,27 @@
 // There is an expanded list of primitive types
 // most are variations of the 'int' type
 
+// 'enum' stands for 'enumeration', and is merely a collection
+// of integer values with  names. The first value defaults to '0'
+// and then increments with each subsequent one, but can be set
+// at any point
+enum MyEnumOfNames
+{
+  George,   // 0
+  Anthony,  // 1
+  Bob = 10, // 10
+  Victor    // 11
+};
+
 int main(int argc, char** argv)
 {
+  // Here is a demonstration of enum values and how to access them
+  std::cout << "The values of MyEnumOfNames are as follows: "         << std::endl;
+  std::cout << "\tGeorge: "                 << George                 << std::endl;
+  std::cout << "\tAnthony: "                << Anthony                << std::endl;
+  std::cout << "\tBob: "                    << Bob                    << std::endl;
+  std::cout << "\tMyEnumOfNames::Victor: "  << MyEnumOfNames::Victor  << std::endl;
+  
   // NOTE: The variables below which are adjacent are identical in type
   
   // Here is the standard 'int', which we saw before
