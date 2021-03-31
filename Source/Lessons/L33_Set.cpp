@@ -10,7 +10,7 @@
   universally quick speeds.
   
   Set (std::set<my_type>)
-    -Unique data stored in buckets via hash
+    -Unique data
     -Quickly inserts data
     -Quickly removes data
     -Automatically sorts data

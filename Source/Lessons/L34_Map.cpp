@@ -5,10 +5,10 @@
     Maps contain a 'Key-Value Pair', where the key is unique and acts
   as the index, and the value is the data stored at that index. Like
   Sets they are generally quick at all operations, and consume large
-  amounts of memory to achieve this.
+  amounts of memory to achieve this. So in summary:
   
   Map (std::map<my_key_type, my_val_type>)
-    -Unique key used to store data in buckets via hash
+    -Unique key used to store data
     -Quickly inserts data
     -Quickly removes data
     -Automatically sorts data
