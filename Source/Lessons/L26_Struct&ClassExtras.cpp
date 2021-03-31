@@ -50,7 +50,7 @@ class Animal
     
     Animal(const char* name_)
     {
-      name = name_;
+      this->name = name_;
     }
   
     virtual void Attack()
