@@ -21,7 +21,7 @@
 
 int main(int argc, char** argv)
 {
-  // here we call the 'printf' function by piecing it together
+  // here we call the 'printf' function by piecing its identifier together
   CONCATENATE(pri, ntf)("Hello Concatenate\n");
   
   // here we turn some input into a string
