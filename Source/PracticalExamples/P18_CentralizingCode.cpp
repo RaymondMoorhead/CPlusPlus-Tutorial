@@ -1,8 +1,8 @@
 /*
     It is good practice to replicate code as little as possible, if
-  something is referenced N times as part of its definition, that's
-  N times for something to go wrong. This cannot always be avoided,
-  but here is a work-around using the pre-processor.
+  something is written N times as part of its definition, that's
+  N opportunites for a typo or other mistake. This cannot always be
+  avoided, but here is a work-around using the pre-processor.
 
     In this example we want to create a bunch of Animals, and each one
   requires their name in the enumeration 'Animal', their name again as
@@ -10,7 +10,7 @@
   make in the 'AnimalNoise' function. It would be very easy to forget
   to add one of these instances, or add it incorrectly, so here instead
   we create a single list of names and noises in 'P18_0_Animals.h' and
-  let the pre-processor convert the information into what we need.
+  use the pre-processor to convert the information into what we need.
 */
 
 enum Animal
