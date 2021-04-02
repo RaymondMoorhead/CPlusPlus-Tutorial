@@ -2,7 +2,7 @@
 
 These lessons have been written with the assumption that the reader has no prior experience programming.
 
-The file IDs are a letter followed by two numbers, the naming convention being ```<ID>_Name``` for the main files, and ```<ID>_#_Name``` for supplementary files. The Letter in the ID is 'L' for Lessons, 'E' for Exercises, and 'P' for practical examples. The number in the ID is either the lesson number, or an association with a lesson number in the case of exercises and examples.
+The file IDs are a letter followed by two numbers, the naming convention being ```<ID>_Name``` for the main files, and ```<ID>_#_Name``` for supplementary files. The Letter in the ID is 'L' for Lessons, 'E' for Exercises, and 'P' for Practical Examples. The number in the ID is either the lesson number, or an association with a lesson number in the case of exercises and examples.
 
 If you need to reference operators, terminology, or other fundamental material, please see the Help folder. If you don't find what you need in there, the internet is a great source (especially cplusplus.com). Important terms in the lessons are noted with single quotes (such as ```'function'```), use those terms when searching for additional information.
 
