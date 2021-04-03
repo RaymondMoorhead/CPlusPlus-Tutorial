@@ -7,6 +7,7 @@ set extraSourceFolder=
 if %id:~0,1%==L set sourceFolder=Lessons
 if %id:~0,1%==E goto exercise-setup
 if %id:~0,1%==P set sourceFolder=PracticalExamples
+if %id:~0,1%==M set sourceFolder=MyCode
 if %sourceFolder%=="_INVALID_" goto bad-id-end
 
 :normal-setup

@@ -51,6 +51,8 @@ else
     SOURCE_FOLDER=Lessons
   elif [ ${ID:0:1} = "P" ]; then
     SOURCE_FOLDER=PracticalExamples
+  elif [ ${ID:0:1} = "M" ]; then
+    SOURCE_FOLDER=MyCode
   else
     echo "Invalid ID"
     exit 1
