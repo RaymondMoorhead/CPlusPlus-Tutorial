@@ -35,6 +35,15 @@ int DoMath(int x, int y, int z, int w)
   return Add(Add(x, y), z) - w;
 }
 
+// The arguments of a function are newly created varables
+// on the stack, they are copies and not originals. If we modify
+// them, the change will not be reflected elsewhere
+int BadModify(int x)
+{
+  x = -1;
+  return x;
+}
+
 int main(int argc, char** argv)
 {
   std::cout << "SayHello: ";
@@ -46,8 +55,15 @@ int main(int argc, char** argv)
   
   std::cout << "DoMath(1, 2, 3, 4): " << DoMath(1, 2, 3, 4) << std::endl;
   
+  int x = 10;
+  std::cout << "x = " << x << std::endl;
+  std::cout << "BadModify(x) = " << BadModify(x) << std::endl;
+  std::cout << "x = " << x << std::endl;
+  
   return 0;
 }
 
-// NOTE:  If the input argument for a function is void, you can ommit it
-//      in the function's declaration.
+/*
+  NOTE:   If the input argument for a function is void, you can ommit it
+        in the function's declaration.
+*/

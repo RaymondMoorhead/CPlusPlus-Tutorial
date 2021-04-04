@@ -87,5 +87,32 @@ int main(int argc, char** argv)
   my_cat.Speak();
   my_cat.Attack();
   
+  // we can also treat Cat as an Animal, it knows what
+  // it is thanks to the 'virtual inheritance tree'
+  Animal* my_animal = new Cat;
+  my_animal->Speak();
+  
+  // the '->' operator works the same here as (*my_animal).Speak()
+  
   return 0;
 }
+
+/*
+  CALLBACK (Allocation):   
+  
+    Now we can talk about why you would use 'new' over 'malloc' or
+    visa versa.
+            
+    'malloc' JUST allocates bytes, that is all. It doesn't know what
+    type you're allocating for, so it cannot call a constructor, and
+    it cannot set up the virtual inheritance tree. However, in some
+    cases it's useful to allocate a large number of contiguous
+    typeless bytes, such as in 'memory managers'- but this goes
+    beyond the scope of these lessons.
+    
+    'new' constructs the object given at an allocated location, if a
+    constructor is provided it will use that instead of the default
+    constructor: 'new Cat("Tux")'. It also sets up the virtual
+    inheritance tree so you can call upon a 'Cat' as if it were an
+    'Animal'.
+*/

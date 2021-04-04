@@ -24,7 +24,7 @@ int main(int argc, char** argv)
   my_pointer = &my_integer;
   
   // You can then read and manipulate the data at that address
-  // with the '*' operator
+  // with the '*' operator. This is called 'dereferencing'
   *my_pointer = *my_pointer - 9;
   
   // you can also create pointers to pointers...to pointers...to pointers...
@@ -33,3 +33,11 @@ int main(int argc, char** argv)
   
   return my_integer;
 }
+
+/*
+  NOTE:   The single most common source of crashes between all programs, is the
+        dereferencing of a pointer that has an address outside of the bounds of
+        your program. It is imperative that you carefully track your pointers.
+        Assign unused ones to 'nullptr', and check if they are before operations
+        in cases where they could have changed.
+*/
