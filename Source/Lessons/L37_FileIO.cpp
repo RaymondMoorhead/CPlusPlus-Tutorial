@@ -20,7 +20,8 @@ int main(int argc, char** argv)
   const char* file_path = "Compiled/FileIO_data.bin";
   
   // here we're using a file with raw binary, not ascii characters,
-  // as it will result in shorter and simpler code here
+  // as it will result in shorter and simpler code here. You can
+  // use text if you simply don't provide the binary 'flag'
   
   std::fstream file;
   unsigned times_accessed = 0;
@@ -67,9 +68,9 @@ int main(int argc, char** argv)
     
     2- I check to see if we're NOT at the end of the file.
     
-    3- If we're not, we attempt to read sizeof(times_accessed) directly
-       into times_accessed. this function only accepts characters, which
-       are 1 byte in size, so a simple casting will work here.
+    3- If we're not, we attempt to read a number of bytes, equal to the size of
+       times_accessed, directly into times_accessed. This function only accepts
+       characters, which are 1 byte in size, so a simple casting will work here.
           
     4- I close the file.
     
