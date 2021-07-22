@@ -64,7 +64,7 @@ int main(int argc, char** argv)
         the Linked List is almost always slower than other
         data structures.
         
-          Cache is the memory local of the CPU itself. When
+          Cache is the memory local to the CPU itself. When
         data is accessed in RAM, the bytes around the desired
         data are also pulled; this is because it's assumed that
         this other data will soon be referenced. In the case of
