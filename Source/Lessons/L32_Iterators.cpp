@@ -54,7 +54,7 @@ int main(int argc, char** argv)
   The vector is an exception in that it is just a fancy array, most
   other structures either don't use numerical indexes, or are formed
   in such a way that repeated incremental indexing will be very slow.
-  We'll see an example of this in our next lesson, on the Linked List.
+  We'll see an example of this in our lesson on the Linked List.
 
 
   NOTE:   These days you'll rarely see the full type written out
