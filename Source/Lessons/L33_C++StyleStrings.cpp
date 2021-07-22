@@ -43,7 +43,7 @@ int main(int argc, char** argv)
   
         c_str         = Get the string as a 'const char*' complete with
                         null terminator
-        substr        = Get a specified section of the string, a 'sub string''
+        substr        = Get a specified section of the string, a 'sub string'
         find          = Get the location of the first occurrence of a 'sub
                         string', or a single character
         find_first_of = Get the location of the first occurrence of any of
