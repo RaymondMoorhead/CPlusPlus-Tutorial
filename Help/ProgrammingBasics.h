@@ -137,8 +137,9 @@
   recommend you take things slowly, see what techniques and
   functions are used in the Lessons, and go from there. Once
   you see how to write a basic program in Lesson 1, you should
-  create a separate Visual Studio project to use as a sandbox
-  for testing concepts and ideas you may have.
+  create a separate project space to use as a sandbox for testing
+  concepts and ideas you may have, or use the 'MyCode' folder under
+  'Source'.
   
     If you want to forge ahead beyond these lessons, or are
   interested in learning additional things I don't cover
